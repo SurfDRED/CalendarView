@@ -1,0 +1,8 @@
+<resources>
+    <string name="Devel">Ячменцев Д. Н.</string>
+    <string name="Title">Calendar «Сроки задачи»</string>
+    <string name="app_name">Calendar «Сроки задачи»</string>
+    <string name="txtStart">Дата-время старт задачи:</string>
+    <string name="txtStop">Дата-время стоп задачи: </string>
+    <string name="btnOk">OK</string>
+</resources>

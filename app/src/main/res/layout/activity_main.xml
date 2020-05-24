@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alwaysDrawnWithCache="false"
+    android:background="@color/colorBackGround"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tbMain"
+        style="@style/Toolbar"
+        android:layout_width="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/user"
+        app:subtitle="@string/Devel"
+        app:subtitleTextAppearance="@style/Toolbar.SubTitle"
+        app:title="@string/Title"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <Button
+        android:id="@+id/chooseStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@color/colorTitleTxt"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/txtStart" />
+
+    <Button
+        android:id="@+id/chooseEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@color/colorSubtitleTxt"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:text="@string/txtStop" />
+
+    <CalendarView
+        android:id="@+id/startDateCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@color/colorTitleTxt"
+        android:visibility="visible" />
+
+    <CalendarView
+        android:id="@+id/endtDateCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@color/colorSubtitleTxt"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:text="@string/btnOk" />
+</LinearLayout>
